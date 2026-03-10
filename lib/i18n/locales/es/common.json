@@ -14,6 +14,9 @@
         "ctaPrimary": "Conectar en LinkedIn",
         "ctaSecondary": "Descargar CV",
         "badges": [
+            "Linux",
+            "Arquitectura de Software",
+            "React & React Native",
             "Go & Node.js",
             "PostgreSQL",
             "Cloud Native",
