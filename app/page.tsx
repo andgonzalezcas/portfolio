@@ -1,7 +1,17 @@
+import HeroSection from "@/components/ui/sections/hero.section";
+import SkillsSection from "@/components/ui/sections/skills.section";
+import ProjectsSection from "@/components/ui/sections/projects.section";
+import ExperienceSection from "@/components/ui/sections/experience.section";
+import ConnectSection from "@/components/ui/sections/connect.section";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-900 text-slate-50 font-sans selection:bg-cyan-500 selection:text-white">
-      {/* Aquí irán tus componentes: Navbar, Hero, Experiencia, etc. */}
+    <main className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-primary-foreground">
+      <HeroSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <ConnectSection />
     </main>
   );
 }
