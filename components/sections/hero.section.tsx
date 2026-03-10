@@ -63,10 +63,11 @@ export default function HeroSection() {
                         {/* Call to Actions */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-6">
                             <a
-                                href={`#${SectionId.EXPERIENCE}`}
+                                href="/Camilo_Gonzalez_CV.pdf"
+                                download="Camilo_Gonzalez_CV.pdf"
                                 className="w-full sm:w-auto px-6 py-3 rounded-xl bg-foreground text-background font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
                             >
-                                {t("hero.ctaSecondary")} <ArrowRight className="w-4 h-4" />
+                                {t("hero.ctaSecondary")} <Download className="w-5 h-5" />
                             </a>
                             <a
                                 href={EXTERNAL_LINKS.LINKEDIN}
