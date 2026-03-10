@@ -25,8 +25,6 @@ export default function Sidebar() {
         i18n.changeLanguage(newLang);
     };
 
-    if (!mounted) { return null }
-
     return (
         <motion.nav
             initial={{ opacity: 0, scale: 0.9 }}
@@ -39,11 +37,9 @@ export default function Sidebar() {
                 className="p-3 rounded-xl bg-muted hover:bg-accent text-muted-foreground hover:text-accent-foreground transition-all duration-300 group relative"
                 aria-label="Toggle Theme"
             >
-                {theme === "dark" ? (
-                    <Sun className="w-5 h-5 group-hover:rotate-90 transition-transform duration-500" />
-                ) : (
-                    <Moon className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-500" />
-                )}
+                {/* CSS-based Hydration Safe Theme Icons */}
+                <Moon className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-500 block dark:hidden" />
+                <Sun className="w-5 h-5 group-hover:rotate-90 transition-transform duration-500 hidden dark:block" />
             </button>
 
             <button
@@ -51,7 +47,7 @@ export default function Sidebar() {
                 className="p-3 rounded-xl bg-muted hover:bg-accent text-muted-foreground hover:text-accent-foreground transition-all duration-300 flex items-center justify-center font-bold text-xs uppercase group relative"
                 aria-label="Toggle Language"
             >
-                <span className="relative z-10">{i18n.language}</span>
+                <span className="relative z-10">{mounted ? i18n.language : 'en'}</span>
             </button>
         </motion.nav>
     );
