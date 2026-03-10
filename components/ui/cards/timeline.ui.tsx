@@ -19,35 +19,33 @@ export default function TimelineCard({ item, isInitiallyOpen = false }: Timeline
     };
 
     return (
-        <div className="border border-white/10 rounded-xl overflow-hidden bg-white/5 backdrop-blur-sm transition-colors hover:border-white/20 group">
+        <div className="border border-border/50 rounded-xl overflow-hidden bg-secondary/30 backdrop-blur-sm transition-colors hover:border-border group">
             <button
                 type="button"
                 onClick={handleToggle}
                 className="w-full flex items-center justify-between p-5 md:p-6 text-left focus:outline-none"
             >
                 <div className="flex flex-col gap-1 pr-4 md:pr-6">
-                    <h3 className="text-lg md:text-xl font-bold text-white leading-tight">{item.title}</h3>
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs md:text-sm text-gray-400 mt-1">
-                        <span className="font-medium text-cyan-400">{item.subtitle}</span>
+                    <h3 className="text-lg md:text-xl font-bold text-foreground leading-tight">{item.title}</h3>
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs md:text-sm text-muted-foreground mt-1">
+                        <span className="font-medium bg-clip-text text-transparent bg-linear-to-r from-cyan-600 to-emerald-600 dark:from-cyan-400 dark:to-emerald-400">{item.subtitle}</span>
                         {item.badge && (
                             <>
                                 <span className="hidden sm:inline">•</span>
-                                <span className="bg-white/10 px-2 py-0.5 rounded text-xs">{item.badge}</span>
+                                <span className="bg-accent text-accent-foreground px-2 py-0.5 rounded text-xs">{item.badge}</span>
                             </>
                         )}
                         <span className="hidden sm:inline">•</span>
                         <span className="whitespace-nowrap">{item.startDate} &mdash; {item.endDate}</span>
                     </div>
-                    {item.location && (
-                        <p className="text-xs md:text-sm text-gray-500 mt-2">{item.location}</p>
-                    )}
+                        <p className="text-xs md:text-sm text-muted-foreground opacity-80 mt-2">{item.location}</p>
                 </div>
-                <div className="shrink-0 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
+                <div className="shrink-0 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted group-hover:bg-accent transition-colors">
                     <motion.div
                         animate={{ rotate: isOpen ? 180 : 0 }}
                         transition={{ duration: 0.2 }}
                     >
-                        <ChevronDown className="w-4 h-4 md:w-5 md:h-5 text-gray-400" />
+                        <ChevronDown className="w-4 h-4 md:w-5 md:h-5 text-muted-foreground group-hover:text-accent-foreground transition-colors" />
                     </motion.div>
                 </div>
             </button>
@@ -59,12 +57,12 @@ export default function TimelineCard({ item, isInitiallyOpen = false }: Timeline
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                        <div className="p-5 md:p-6 pt-0 border-t border-white/10">
+                        <div className="p-5 md:p-6 pt-0 border-t border-border/50">
                             {item.description && item.description.length > 0 && (
-                                <ul className="flex flex-col gap-3 mt-4 text-gray-300 text-sm md:text-base">
+                                <ul className="flex flex-col gap-3 mt-4 text-muted-foreground text-sm md:text-base">
                                     {item.description.map((desc, index) => (
                                         <li key={index} className="flex items-start gap-3">
-                                            <span className="text-cyan-400 mt-[5px] shrink-0 text-[10px]">▶</span>
+                                            <span className="text-cyan-600 dark:text-cyan-400 mt-[5px] shrink-0 text-[10px]">▶</span>
                                             <span className="leading-relaxed">{desc}</span>
                                         </li>
                                     ))}
@@ -75,7 +73,7 @@ export default function TimelineCard({ item, isInitiallyOpen = false }: Timeline
                                     {item.skills.map((skill, index) => (
                                         <span
                                             key={index}
-                                            className="px-2 py-1 md:px-3 rounded-full bg-cyan-950/40 text-cyan-300 text-xs border border-cyan-800/50 hover:bg-cyan-900/50 transition-colors"
+                                            className="px-2 py-1 md:px-3 rounded-full bg-cyan-100 dark:bg-cyan-950/40 text-cyan-800 dark:text-cyan-300 text-xs border border-cyan-200 dark:border-cyan-800/50 hover:bg-cyan-200 dark:hover:bg-cyan-900/50 transition-colors"
                                         >
                                             {skill}
                                         </span>
