@@ -29,10 +29,10 @@ export default function Sidebar() {
 
     return (
         <motion.nav
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="fixed left-4 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-4 bg-secondary/30 backdrop-blur-md border border-border/50 p-2 rounded-2xl shadow-xl hover:border-border transition-colors group/nav"
+            className="fixed z-50 flex gap-4 bg-secondary/30 backdrop-blur-md border border-border/50 p-2 rounded-2xl shadow-xl hover:border-border transition-colors group/nav top-4 left-1/2 -translate-x-1/2 flex-row md:top-1/2 md:left-4 md:-translate-y-1/2 md:translate-x-0 md:flex-col"
         >
             <button
                 onClick={toggleTheme}
