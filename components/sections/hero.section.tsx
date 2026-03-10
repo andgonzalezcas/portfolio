@@ -72,7 +72,7 @@ export default function HeroSection() {
                             <a
                                 href={EXTERNAL_LINKS.LINKEDIN}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                                 className="w-full sm:w-auto px-6 py-3 rounded-xl bg-secondary/50 border border-border text-foreground font-semibold flex items-center justify-center gap-2 hover:bg-secondary transition-colors"
                             >
                                 {t("hero.ctaPrimary")}

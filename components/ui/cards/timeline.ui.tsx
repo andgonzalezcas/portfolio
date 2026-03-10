@@ -23,7 +23,7 @@ export default function TimelineCard({ item, isInitiallyOpen = false }: Timeline
             <button
                 type="button"
                 onClick={handleToggle}
-                className="w-full flex items-center justify-between p-5 md:p-6 text-left focus:outline-none"
+                className="w-full flex items-center justify-between p-5 md:p-6 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-inset rounded-xl"
             >
                 <div className="flex flex-col gap-1 pr-4 md:pr-6">
                     <h3 className="text-lg md:text-xl font-bold text-foreground leading-tight">{item.title}</h3>
