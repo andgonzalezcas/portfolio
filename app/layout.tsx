@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/theme-provider";
 import I18nProvider from "@/components/i18n-provider";
+import Sidebar from "@/components/ui/navigation/sidebar.component";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
           storageKey="portfolio-theme"
         >
           <I18nProvider>
+            <Sidebar />
             {children}
           </I18nProvider>
         </ThemeProvider>
