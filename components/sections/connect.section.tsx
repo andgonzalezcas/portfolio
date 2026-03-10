@@ -37,7 +37,7 @@ export default function ConnectSection() {
     ];
 
     return (
-        <section id={SectionId.CONNECT} className="py-24 relative overflow-hidden bg-background">
+        <section id={SectionId.CONNECT} className="min-h-screen flex items-center justify-center py-24 relative overflow-hidden bg-background">
             <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px] -z-10 pointer-events-none -translate-y-1/2" />
             <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
 

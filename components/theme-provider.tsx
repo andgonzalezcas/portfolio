@@ -30,41 +30,30 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 
 export default function ThemeProvider({
     children,
-    defaultTheme = "system",
+    defaultTheme = "dark",
     storageKey = "portfolio-theme",
     ...props
 }: ThemeProviderProps) {
-    const [theme, setTheme] = useState<Theme>("system")
+    const [theme, setTheme] = useState<Theme>(defaultTheme === "system" ? "dark" : defaultTheme)
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
         const savedTheme = localStorage.getItem(storageKey) as Theme
-        if (savedTheme) {
+        if (savedTheme && savedTheme !== "system") {
             setTheme(savedTheme)
         } else {
-            setTheme(defaultTheme)
+            const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+            setTheme(systemTheme)
         }
         setMounted(true)
-    }, [defaultTheme, storageKey])
+    }, [storageKey])
 
     useEffect(() => {
         if (!mounted) return
 
         const root = window.document.documentElement
-
         root.classList.remove("light", "dark")
-
-        if (theme === "system") {
-            const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-                .matches
-                ? "dark"
-                : "light"
-
-            root.classList.add(systemTheme)
-            return
-        }
-
-        root.classList.add(theme)
+        root.classList.add(theme !== "system" ? theme : "dark")
     }, [theme, mounted])
 
     const value = {
