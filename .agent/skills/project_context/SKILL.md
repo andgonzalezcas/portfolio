@@ -20,11 +20,16 @@ You are an expert Next.js developer. Follow these architectural and coding guide
 
 This project follows the Next.js App Router conventions.
 
-### File Naming & Structure
-- **Routing:** `app/**/page.tsx` or `app/**/layout.tsx`.
-- **UI Components:** `components/*.tsx` (e.g., `Button.tsx`).
-- **Features/Views:** Extract complex logic or larger page sections into feature-specific components.
-- **Others:** `lib/*.util.ts`, `lib/*.constant.ts`, `types/*.type.ts`.
+### File Naming & Structure (Flat Decoupled Architecture)
+- **`app/`**: Routing and pages (`app/**/page.tsx`, `app/**/layout.tsx`).
+- **`components/ui/`**: Reusable generic "dumb" components (e.g., `Button.tsx`, Shadcn-like elements).
+- **`components/layout/`**: Structural app components (e.g., `Navbar.tsx`, `Footer.tsx`).
+- **`features/` or `components/features/`**: Complex logic or larger domain-specific page sections.
+- **`lib/`**: External library configurations (e.g., `lib/i18n/`, `lib/prisma/`).
+- **`utils/`**: Clean, pure logic functions (e.g., `utils/formatDate.ts`, `utils/cn.ts`).
+- **`constants/`**: Hardcoded variables and configuration objects (e.g., `constants/navigation.ts`).
+- **`types/`**: TypeScript interfaces and types (`types/*.type.ts`).
+- **`hooks/`**: Custom React hooks (`hooks/useScroll.ts`).
 
 ### Next.js Specific Rules
 - **Server Components by Default:** ALL components in `app/` are Server Components unless explicitly marked with `"use client"` at the very top.
