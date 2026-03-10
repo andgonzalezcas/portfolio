@@ -9,7 +9,10 @@ i18n.use(LanguageDetector)
     .use(initReactI18next)
     .init({
         debug: true,
-        fallbackLng: "es",
+        fallbackLng: "en",
+        supportedLngs: ["en", "es"],
+        nonExplicitSupportedLngs: true,
+        load: 'languageOnly',
         resources: {
             es: {
                 common: esCommon,

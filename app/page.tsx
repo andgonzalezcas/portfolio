@@ -1,7 +1,15 @@
+import HeroSection from "@/components/sections/hero.section";
+import ProjectsSection from "@/components/sections/projects.section";
+import ExperienceSection from "@/components/sections/experience.section";
+import ConnectSection from "@/components/sections/connect.section";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-900 text-slate-50 font-sans selection:bg-cyan-500 selection:text-white">
-      {/* Aquí irán tus componentes: Navbar, Hero, Experiencia, etc. */}
+    <main className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-primary-foreground">
+      <HeroSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <ConnectSection />
     </main>
   );
 }
