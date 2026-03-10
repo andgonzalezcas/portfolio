@@ -181,5 +181,13 @@
                 ]
             }
         ]
+    },
+    "connect": {
+        "title": "Conectemos",
+        "description": "Siempre estoy abierto a discutir proyectos o oportunidades de colaboración.",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "whatsapp": "WhatsApp",
+        "email": "Envíame un Email"
     }
 }

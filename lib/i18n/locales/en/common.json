@@ -178,8 +178,17 @@
                     "Go (Golang)",
                     "Backend Architecture",
                     "Systems Design"
-                ]
+                ],
+                "link": "https://github.com/andgonzalezcas/go_emergency_system"
             }
         ]
+    },
+    "connect": {
+        "title": "Let's Connect",
+        "description": "I'm always open to discussing product design work or partnership opportunities.",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "whatsapp": "WhatsApp",
+        "email": "Email Me"
     }
 }

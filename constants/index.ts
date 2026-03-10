@@ -1,5 +1,8 @@
 export const EXTERNAL_LINKS = {
     LINKEDIN: "https://www.linkedin.com/in/camilo-andres-gonzalez-castro-1a2515237/",
+    GITHUB: "https://github.com/andgonzalezcas",
+    WHATSAPP: "https://api.whatsapp.com/send?phone=573232396652",
+    EMAIL: "mailto:andgonzalezcas@gmail.com"
 };
 
 export const PROJECT_LINKS = [
