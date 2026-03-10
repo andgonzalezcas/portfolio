@@ -29,14 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <I18nProvider>
-          <ThemeProvider
-            defaultTheme="system"
-            storageKey="portfolio-theme"
-          >
+        <ThemeProvider
+          defaultTheme="system"
+          storageKey="portfolio-theme"
+        >
+          <I18nProvider>
             {children}
-          </ThemeProvider>
-        </I18nProvider>
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
