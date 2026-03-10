@@ -1,6 +1,12 @@
 {
     "greeting": "Bienvenido a mi portafolio",
     "description": "Soy un desarrollador frontend",
+    "navbar": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "experience": "Experiencia",
+        "connect": "Contacto"
+    },
     "hero": {
         "greeting": "Hola, soy Camilo Andrés",
         "role": "Ingeniero de Software | Entusiasta Backend & SRE",

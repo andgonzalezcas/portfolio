@@ -29,10 +29,10 @@ export default function Navbar() {
     const closeMenu = () => setIsMobileMenuOpen(false);
 
     const links = [
-        { name: "Home", href: `#${SectionId.HERO}` },
-        { name: "Projects", href: `#${SectionId.PROJECTS}` },
-        { name: "Experience", href: `#${SectionId.EXPERIENCE}` },
-        { name: "Connect", href: `#${SectionId.CONNECT}` },
+        { name: t("navbar.home"), href: `#${SectionId.HERO}` },
+        { name: t("navbar.projects"), href: `#${SectionId.PROJECTS}` },
+        { name: t("navbar.experience"), href: `#${SectionId.EXPERIENCE}` },
+        { name: t("navbar.connect"), href: `#${SectionId.CONNECT}` },
     ];
 
     return (
