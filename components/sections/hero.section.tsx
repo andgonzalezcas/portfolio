@@ -27,7 +27,7 @@ export default function HeroSection() {
             <div className="absolute top-1/4 left-1/4 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
 
-            <div className="container px-4 mx-auto max-w-7xl relative z-10">
+            <div className="container w-full px-4 md:px-8 mx-auto max-w-6xl relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8 items-center cursor-default">
 
                     {/* Left Column: Text (60%) */}
