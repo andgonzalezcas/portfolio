@@ -123,5 +123,63 @@
                 ]
             }
         ]
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "description": "A selection of my most impactful work, spanning from decentralized Web3 applications and cross-platform FinTech wallets to highly resilient backend architectures.",
+        "items": [
+            {
+                "title": "VIIO App (Digital Wallet)",
+                "description": "A comprehensive digital wallet available on iOS and Android for managing blockchain assets (USDC and USDT). Features include Visa card integration for real-world spending, deposits, withdrawals, and seamless transfers.",
+                "tags": [
+                    "Ionic",
+                    "Capacitor",
+                    "Android",
+                    "iOS",
+                    "Blockchain",
+                    "APIs",
+                    "FinTech Security"
+                ]
+            },
+            {
+                "title": "The Hub & 3D Avatar Module",
+                "description": "Developed the landing page and the interactive 3D Avatar Module for The Hub DAO. Integrated Three.js to render 3D models and dynamically mapped blockchain assets directly onto the avatars.",
+                "tags": [
+                    "React",
+                    "Three.js",
+                    "Web3",
+                    "Blockchain Assets"
+                ]
+            },
+            {
+                "title": "VIIO Landing Page",
+                "description": "Corporate landing page for the VIIO digital wallet, built for high performance, SEO optimization, and a seamless user acquisition funnel.",
+                "tags": [
+                    "Next.js",
+                    "React",
+                    "Tailwind CSS",
+                    "Frontend Architecture"
+                ]
+            },
+            {
+                "title": "B12 API & CI/CD Challenge",
+                "description": "Technical challenge showcasing API endpoint integrations and automated deployment pipelines using GitHub Actions (CI/CD).",
+                "tags": [
+                    "API Integration",
+                    "GitHub Actions",
+                    "CI/CD",
+                    "Automated Testing"
+                ]
+            },
+            {
+                "title": "Emergency Go System",
+                "description": "A backend system built to handle emergency routing and processing, demonstrating strong backend logic and architecture outside of the standard frontend stack.",
+                "tags": [
+                    "Go (Golang)",
+                    "Backend Architecture",
+                    "Systems Design"
+                ]
+            }
+        ]
     }
 }

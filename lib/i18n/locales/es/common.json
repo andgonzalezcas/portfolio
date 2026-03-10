@@ -123,5 +123,63 @@
                 ]
             }
         ]
+    },
+    "projects": {
+        "title": "Proyectos Destacados",
+        "description": "Una selección de mi trabajo más impactante, que abarca desde aplicaciones Web3 descentralizadas y billeteras FinTech multiplataforma hasta arquitecturas backend altamente resilientes.",
+        "items": [
+            {
+                "title": "App VIIO (Billetera Digital)",
+                "description": "Una billetera digital integral disponible en iOS y Android para gestionar activos blockchain (USDC y USDT). Las características incluyen integración con tarjeta Visa para gastos en el mundo real, depósitos, retiros y transferencias sin interrupciones.",
+                "tags": [
+                    "Ionic",
+                    "Capacitor",
+                    "Android",
+                    "iOS",
+                    "Blockchain",
+                    "APIs",
+                    "Seguridad FinTech"
+                ]
+            },
+            {
+                "title": "The Hub & Módulo de Avatar 3D",
+                "description": "Desarrollé la landing page y el Módulo de Avatar 3D interactivo para The Hub DAO. Integré Three.js para renderizar modelos 3D y asigné dinámicamente activos blockchain directamente a los avatares.",
+                "tags": [
+                    "React",
+                    "Three.js",
+                    "Web3",
+                    "Activos Blockchain"
+                ]
+            },
+            {
+                "title": "Landing Page de VIIO",
+                "description": "Landing page corporativa para la billetera digital VIIO, construida para alto rendimiento, optimización SEO y un embudo de adquisición de usuarios fluido.",
+                "tags": [
+                    "Next.js",
+                    "React",
+                    "Tailwind CSS",
+                    "Arquitectura Frontend"
+                ]
+            },
+            {
+                "title": "Reto B12 API & CI/CD",
+                "description": "Reto técnico que muestra integraciones de endpoints API y pipelines de despliegue automatizado usando GitHub Actions (CI/CD).",
+                "tags": [
+                    "Integración de APIs",
+                    "GitHub Actions",
+                    "CI/CD",
+                    "Pruebas Automatizadas"
+                ]
+            },
+            {
+                "title": "Sistema de Emergencia en Go",
+                "description": "Un sistema backend construido para manejar el enrutamiento y procesamiento de emergencias, demostrando una sólida lógica y arquitectura de backend fuera del stack frontend estándar.",
+                "tags": [
+                    "Go (Golang)",
+                    "Arquitectura Backend",
+                    "Diseño de Sistemas"
+                ]
+            }
+        ]
     }
 }
