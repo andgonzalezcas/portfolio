@@ -4,11 +4,13 @@ import ExperienceSection from "@/components/sections/experience.section";
 import ConnectSection from "@/components/sections/connect.section";
 import Navbar from "@/components/ui/navigation/navbar.component";
 import FadeIn from "@/components/wrappers/fadeIn.wrapper";
+import StructuralTracker from "@/components/ui/animations/structuralTracker.component";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-primary-foreground">
+    <main className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-primary-foreground relative">
       <Navbar />
+      <StructuralTracker />
 
       <FadeIn isEntry={true}>
         <HeroSection />
