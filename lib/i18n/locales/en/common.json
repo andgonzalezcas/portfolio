@@ -1,4 +1,114 @@
 {
     "greeting": "Welcome to my portfolio",
-    "description": "I am a frontend developer"
+    "description": "I am a frontend developer",
+    "experience": {
+        "title": "Experience & Education",
+        "subtitle": "A showcase of my professional journey, highlighting the roles and responsibilities that have shaped my skills as an engineer, and my academic background.",
+        "workTitle": "Work Experience",
+        "educationTitle": "Education",
+        "jobs": [
+            {
+                "id": "viio-fullstack",
+                "title": "Full Stack Engineer",
+                "subtitle": "VIIO",
+                "location": "Bogotá, Capital District, Colombia · Hybrid",
+                "badge": "Full-time",
+                "startDate": "Dec 2023",
+                "endDate": "Feb 2026",
+                "description": [
+                    "Was part of the team that developed a scalable SaaS platform from scratch, championing clean code practices and the creation of highly reusable, optimized components.",
+                    "Managed the crucial integration layer between backend data and frontend execution, streamlining API requests and state management to deliver ready-to-use data for UI developers.",
+                    "Pioneered the integration of advanced AI workflows into the development cycle (utilizing Gemini 3 Pro, MCP context7, and NotebookLM) to automate repetitive tasks and accelerate process resolution.",
+                    "Developed cross-platform mobile applications available on the Play Store and App Store, including the main VIIO app using Capacitor and Ionic, as well as an internal mobile tool leveraging React Native and Flutter.",
+                    "Engineered backend solutions using Node.js and PostgreSQL, developing microservices and setting up testing environments."
+                ],
+                "skills": [
+                    "Engineering",
+                    "Generative AI Development",
+                    "Next.js",
+                    "React",
+                    "React Native",
+                    "Flutter",
+                    "Capacitor",
+                    "Ionic",
+                    "Node.js",
+                    "PostgreSQL",
+                    "Microservices"
+                ]
+            },
+            {
+                "id": "thehub-frontend",
+                "title": "Frontend Web Developer",
+                "subtitle": "THE HUB",
+                "location": "Bogota, D.C., Capital District, Colombia · Remote",
+                "badge": "Full-time",
+                "startDate": "Mar 2023",
+                "endDate": "Dec 2023",
+                "description": [
+                    "Built and optimized high-impact interactive landing pages.",
+                    "Engineered a complex Web3 avatar management system using Three.js, successfully rendering 3D character models and dynamically attaching digital assets fetched directly from the blockchain."
+                ],
+                "skills": [
+                    "Front-End Development",
+                    "Three.js",
+                    "Web3",
+                    "Blockchain"
+                ]
+            },
+            {
+                "id": "itrmachines-intern",
+                "title": "Internship Trainee",
+                "subtitle": "ITRMachines (Intelligent Trading Machines)",
+                "location": "Bogota, D.C., Capital District, Colombia · Hybrid",
+                "badge": "Part-time",
+                "startDate": "Apr 2022",
+                "endDate": "Mar 2023",
+                "description": [
+                    "Completed a rigorous one-year internship focusing on frontend development and Web3 technologies.",
+                    "Executed the controlled deployment of Solidity smart contracts, ensuring security and proper functionality.",
+                    "Developed and improved critical user workflows and interfaces for a client-facing web application."
+                ],
+                "skills": [
+                    "Front-End Development",
+                    "Solidity",
+                    "Web3",
+                    "Blockchain"
+                ]
+            }
+        ],
+        "education": [
+            {
+                "id": "unal-engineering",
+                "title": "Engineer's degree, Computer Systems Engineering",
+                "location": "Bogotá, Capital District, Colombia",
+                "subtitle": "Universidad Nacional de Colombia",
+                "badge": "Grade: Systems and Computer Engineer",
+                "startDate": "Feb 2019",
+                "endDate": "Dec 2023",
+                "description": [
+                    "Completed a multidisciplinary curriculum combining core mathematics (Calculus, Linear Algebra, Probability & Statistics) with foundational Physics and Electronics (Mechanics, Electricity, Computer Architecture).",
+                    "Mastered core computer science principles through rigorous coursework in Data Structures, Advanced Algorithms, Theory of Computation, Numerical Methods, and Object-Oriented Programming (OOP, Design Patterns, Clean Architecture).",
+                    "Developed expertise in advanced specializations, including Parallel and Distributed Computing, Cryptography & Information Security, Mobile Application Development, Data Mining, Intelligent Systems, and Visual Computing.",
+                    "Engineered resilient software architectures by applying theoretical knowledge to practical, interdisciplinary projects, leveraging industry-standard languages such as C++, C#, Python, and Go.",
+                    "Acquired a holistic engineering perspective through courses in Systems Thinking, Project Management, Software Engineering (I, II, and Advanced), and IT Infrastructure Architecture."
+                ],
+                "skills": [
+                    "C++",
+                    "C#",
+                    "Python",
+                    "Go",
+                    "Linux",
+                    "Algorithms",
+                    "Data Structures",
+                    "Software Architecture",
+                    "System Architecture",
+                    "Distributed Computing",
+                    "Cryptography",
+                    "Data Mining",
+                    "Intelligent Systems",
+                    "Project Management"
+                ]
+            }
+        ]
+    }
 }
