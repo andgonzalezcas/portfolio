@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Download } from "lucide-react";
 import { EXTERNAL_LINKS } from "@/constants";
@@ -9,15 +8,6 @@ import { SectionId } from "@/enums/common";
 
 export default function HeroSection() {
     const { t } = useTranslation("common");
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) {
-        return <section className="min-h-screen" />;
-    }
 
     const badges = t("hero.badges", { returnObjects: true }) as string[];
 
@@ -82,15 +72,16 @@ export default function HeroSection() {
 
                     {/* Right Column: Avatar (40%) */}
                     <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative lg:col-span-2">
-                        <div className="relative w-80 h-80 md:w-[450px] md:h-[450px]">
+                        <div className="relative w-full max-w-[320px] md:max-w-[450px] aspect-square">
                             <div className="absolute inset-0 rounded-full bg-linear-to-r from-cyan-600 to-emerald-600 dark:from-cyan-400 dark:to-emerald-400 blur-2xl opacity-20 dark:opacity-40 animate-pulse" />
                             <div className="absolute inset-4 rounded-full bg-linear-to-tr from-cyan-600 to-emerald-600 dark:from-cyan-400 dark:to-emerald-400 flex items-center justify-center overflow-hidden border border-background shadow-2xl">
                                 <Image
                                     src="/profile.png"
                                     alt="Camilo Andrés"
                                     className="object-cover w-full h-full"
-                                    width={500}
-                                    height={500}
+                                    width={450}
+                                    height={450}
+                                    sizes="(max-width: 768px) 320px, 450px"
                                     priority
                                 />
                             </div>
