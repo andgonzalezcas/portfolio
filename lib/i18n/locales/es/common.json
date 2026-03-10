@@ -1,6 +1,19 @@
 {
     "greeting": "Bienvenido a mi portafolio",
     "description": "Soy un desarrollador frontend",
+    "hero": {
+        "greeting": "Hola, soy Camilo Andrés",
+        "role": "Ingeniero de Software | Entusiasta Backend & SRE",
+        "description": "Como Ingeniero de Sistemas especializado en el puente crítico entre backend y frontend, me apasiona diseñar arquitecturas SaaS altamente escalables en Go y PostgreSQL, y automatizar flujos complejos con IA.",
+        "ctaPrimary": "Conectar en LinkedIn",
+        "ctaSecondary": "Ver Experiencia",
+        "badges": [
+            "Go & Node.js",
+            "PostgreSQL",
+            "Cloud Native",
+            "Automatización IA"
+        ]
+    },
     "experience": {
         "title": "Experiencia y Educación",
         "subtitle": "Una muestra de mi trayectoria profesional, destacando los roles y responsabilidades que han forjado mis habilidades como ingeniero, así como mi formación académica.",

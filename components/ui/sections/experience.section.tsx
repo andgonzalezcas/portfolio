@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import TimelineCard from "@/components/ui/cards/timeline.ui";
 import { TimelineItem } from "@/types/common.types";
+import { SectionId } from "@/lib/enums/common";
 
 export default function ExperienceSection() {
     const { t } = useTranslation("common");
@@ -21,7 +22,7 @@ export default function ExperienceSection() {
     }
 
     return (
-        <section id="experience" className="py-24 min-h-screen relative overflow-hidden">
+        <section id={SectionId.EXPERIENCE} className="py-24 min-h-screen relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
