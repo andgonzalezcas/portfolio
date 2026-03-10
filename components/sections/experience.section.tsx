@@ -27,7 +27,7 @@ export default function ExperienceSection() {
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
 
-            <div className="container px-4 mx-auto max-w-4xl relative z-10">
+            <div className="container w-full px-4 md:px-8 mx-auto max-w-6xl relative z-10">
                 <div className="mb-16 text-center">
                     <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-cyan-600 to-emerald-600 dark:from-cyan-400 dark:to-emerald-400 mb-4 inline-block">
                         {t("experience.title")}

@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=block");
-
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
 body {
-  @apply m-0;
-  font-family: "Geist", "Segoe UI", sans-serif;
+  @apply m-0 font-sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,7 +13,8 @@ code {
 }
 
 :root {
-  --font-sans: "Geist", "Segoe UI", sans-serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 
   /* Light Mode */
   --background: 40 20% 97%;
