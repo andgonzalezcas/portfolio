@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ArrowRight, Download } from "lucide-react";
-import { EXTERNAL_LINKS } from "@/lib/constants";
-import { SectionId } from "@/lib/enums/common";
+import { EXTERNAL_LINKS } from "@/constants";
+import { SectionId } from "@/enums/common";
 
 export default function HeroSection() {
     const { t } = useTranslation("common");

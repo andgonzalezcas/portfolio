@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import TimelineCard from "@/components/ui/cards/timeline.ui";
 import { TimelineItem } from "@/types/common.types";
-import { SectionId } from "@/lib/enums/common";
+import { SectionId } from "@/enums/common";
 
 export default function ExperienceSection() {
     const { t } = useTranslation("common");
